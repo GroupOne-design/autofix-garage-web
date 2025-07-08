@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AutoFix Garage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 20px 0 10px;
+      color: #1f4037;
+    }
+
+    .nav-buttons {
+      margin: 15px 0;
+    }
+
+    .nav-buttons a {
+      text-decoration: none;
+      background-color: #064e3b;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      margin: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav-buttons a:hover {
+      background-color: #045c41;
+    }
+
+    .fullscreen-img {
+      width: 100vw;
+      height: 50vh;
+      object-fit: cover;
+      display: block;
+    }
+
+    .section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 80px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #1f4037;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #555;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #1f4037;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background: #14532d;
+    }
+
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      max-width: 600px;
+      margin: 30px auto;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    form h2 {
+      margin-bottom: 20px;
+      color: #1f4037;
+    }
+
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 500;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 20px;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      background: #1f4037;
+      color: white;
+      margin-top: 50px;
+    }
+
+    .social-icons {
+      margin-top: 15px;
+    }
+
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5em;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #ccc;
+    }
+
+    @media(max-width: 768px) {
+      .services {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://res.cloudinary.com/dtjjgiitl/image/upload/q_auto:good,f_auto,fl_progressive/v1751977732/qdl8e0fzqmowtvuprioz.jpg" alt="Banner" class="fullscreen-img">
+    <h1>AUTO FIX GARAGE...</h1>
+    <h3>Your Trusted Auto Repair and Maintenance Partner</h3>
+    <div class="nav-buttons">
+      <a href="#services">Services</a>
+      <a href="#booking">Book Now</a>
+      <a href="#quote">Get Quote</a>
+    </div>
+  </header>
+
+  <section id="services" class="section">
+    <h1 style="text-align:center; margin-bottom: 40px;">Our Services</h1>
+    <div class="services">
+      <div class="card">
+        <img src="https://res.cloudinary.com/dtjjgiitl/image/upload/q_auto:good,f_auto,fl_progressive/v1751978502/zfd5som2mjhic31eduef.jpg" alt="Diagnostics">
+        <h3>Auto Diagnostics</h3>
+        <p>Advanced diagnostics to identify and fix your car’s issues quickly.</p>
+        <p><strong>From $50</strong></p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/oil-industry.png" alt="Oil Change">
+        <h3>Oil Change</h3>
+        <p>Premium oil & filter change for a smoother engine and longer life.</p>
+        <p><strong>From $35</strong></p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/brake-discs.png" alt="Brake Repair">
+        <h3>Brake Repair</h3>
+        <p>Comprehensive brake inspections and affordable repair solutions.</p>
+        <p><strong>From $120</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking" class="section">
+    <form id="bookingForm">
+      <h2>Book a Service</h2>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="service">Select Service</label>
+      <select id="service" name="service" required>
+        <option value="">-- Choose --</option>
+        <option value="diagnostics">Auto Diagnostics</option>
+        <option value="oil">Oil Change</option>
+        <option value="brakes">Brake Repair</option>
+      </select>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <button type="submit" class="button">Book Now</button>
+    </form>
+  </section>
+
+  <section id="quote" class="section">
+    <form id="quoteForm">
+      <h2>Request a Quote</h2>
+      <label for="car">Car Make & Model</label>
+      <input type="text" id="car" name="car" required>
+
+      <label for="issue">Describe the Issue</label>
+      <textarea id="issue" name="issue" rows="4" required></textarea>
+
+      <label for="contact">Preferred Contact Method</label>
+      <select id="contact" name="contact" required>
+        <option value="">-- Select --</option>
+        <option value="email">Email</option>
+        <option value="phone">Phone</option>
+      </select>
+
+      <button type="submit" class="button">Get Quote</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AutoFix Garage. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    // Booking form submission
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (
+        document.getElementById('name').value.trim() &&
+        document.getElementById('email').value.trim() &&
+        document.getElementById('phone').value.trim() &&
+        document.getElementById('service').value &&
+        document.getElementById('date').value
+      ) {
+        window.location.href = 'Booking successful.html';
+      } else {
+        alert("Please fill in all required fields.");
+      }
+    });
+
+    // Quote form submission
+    document.getElementById('quoteForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      if (
+        document.getElementById('car').value.trim() &&
+        document.getElementById('issue').value.trim() &&
+        document.getElementById('contact').value
+      ) {
+        window.location.href = 'Get quote.html';
+      } else {
+        alert("Please fill in all required fields.");
+      }
+    });
+  </script>
+
+</body>
+</html>
